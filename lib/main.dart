@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:healthylifecoach/anaSayfa.dart';
 import 'package:healthylifecoach/hosGeldiniz.dart';
 import 'package:healthylifecoach/services/firebaseIslemleri.dart';
+import 'package:healthylifecoach/uyeOl.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -117,7 +118,7 @@ class HealthyLifeCoach extends StatelessWidget {
             FlatButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => AnaSayfa()));
+                      MaterialPageRoute(builder: (context) => UyeOl()));
                 },
                 child: Text(
                   "Üye Ol",
