@@ -457,3 +457,25 @@ class OnerilerColumn extends StatelessWidget {
     );
   }
 }
+
+class GestureContainer extends StatelessWidget {
+  String? rakam;
+  Color? renk;
+
+  GestureContainer({this.rakam, this.renk});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 137,
+      height: 185,
+      color: renk,
+      child: Center(
+        child: Text(
+          "$rakam",
+          style: TextStyle(fontSize: 80),
+        ),
+      ),
+    );
+  }
+}

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:healthylifecoach/hesapla1.dart';
 import 'package:healthylifecoach/hesapla2.dart';
-import 'package:healthylifecoach/sabitler.dart';
+import 'package:healthylifecoach/veriEkle.dart';
 
 class Endeks extends StatefulWidget {
   const Endeks({Key? key}) : super(key: key);
@@ -186,6 +186,38 @@ class _EndeksState extends State<Endeks> {
                       ],
                     ),
                     Container(
+                        height: 50,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Container(
+                              height: 50,
+                              child: ElevatedButton(
+                                onPressed: () {
+                                 Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => VeriEkle()));
+                                },
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(FontAwesomeIcons.add),
+                                    Text(
+                                      " VERİ EKLE",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 25),
+                                    ),
+                                  ],
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.grey),
+                              ),
+                            ),
+                          ],
+                        )),
+                    Container(
                       height: 50,
                       child: ElevatedButton(
                         onPressed: () {
@@ -208,7 +240,7 @@ class _EndeksState extends State<Endeks> {
                           children: [
                             Icon(FontAwesomeIcons.calculator),
                             Text(
-                              "HESAPLA",
+                              "  HESAPLA",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 25),
                             ),
@@ -216,7 +248,7 @@ class _EndeksState extends State<Endeks> {
                         ),
                         style: ElevatedButton.styleFrom(primary: Colors.grey),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
