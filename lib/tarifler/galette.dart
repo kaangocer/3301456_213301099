@@ -76,7 +76,7 @@ class GaletteTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "6.)170 derece fırında 30-35 dk pişirelim."),
-      ],
+      SizedBox(height:70)],
     );
   }
 }

@@ -69,7 +69,7 @@ class YabanMersinliGranolaTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "7.)Fırından aldıktan sonra birkaç saat tepside bekletip soğutalım."),
-      ],
+      SizedBox(height:70)],
     );
   }
 }

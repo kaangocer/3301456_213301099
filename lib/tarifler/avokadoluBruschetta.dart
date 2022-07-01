@@ -48,6 +48,7 @@ class AvokadoluBruschetta extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "3.)Dilim yeşil zeytinleri (bıçakla ufaltırsanız daha iyi olur) ve küp küp doğranmış avokadoyu da ekledikten sonra zeytinyağı, tuz ve karabiberle karıştırdık."),
+      SizedBox(height:70)
       ],
     );
   }

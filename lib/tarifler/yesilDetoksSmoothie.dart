@@ -46,6 +46,7 @@ class YesilDetoksSmoothieTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "Tüm malzemeleri pürüzsüz hale gelene kadar blenderdan geçirelim."),
+        SizedBox(height: 70)
       ],
     );
   }

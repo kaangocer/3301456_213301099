@@ -158,59 +158,63 @@ class icerikVeFiyat extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          width: 250,
-          height: 250,
-          child: Carousel(
-            images: [
-              Image.asset(
-                "assets/images/$carouselJpg1.jpg",
-                fit: BoxFit.cover,
-              ),
-              Image.asset(
-                "assets/images/$carouselJpg2.jpg",
-                fit: BoxFit.cover,
-              ),
-              Image.asset(
-                "assets/images/$carouselJpg3.jpg",
-                fit: BoxFit.cover,
-              )
-            ],
-            dotSize: 6,
-            dotSpacing: 12.0,
-            dotColor: Colors.lightGreenAccent,
-            indicatorBgPadding: 5.0,
-            dotBgColor: Colors.purple.withOpacity(0.5),
-            borderRadius: true,
-            moveIndicatorFromBottom: 180.0,
-            noRadiusForIndicator: true,
+        Expanded(
+          child: Container(
+            width: 250,
+            height: 250,
+            child: Carousel(
+              images: [
+                Image.asset(
+                  "assets/images/$carouselJpg1.jpg",
+                  fit: BoxFit.cover,
+                ),
+                Image.asset(
+                  "assets/images/$carouselJpg2.jpg",
+                  fit: BoxFit.cover,
+                ),
+                Image.asset(
+                  "assets/images/$carouselJpg3.jpg",
+                  fit: BoxFit.cover,
+                )
+              ],
+              dotSize: 6,
+              dotSpacing: 12.0,
+              dotColor: Colors.lightGreenAccent,
+              indicatorBgPadding: 5.0,
+              dotBgColor: Colors.purple.withOpacity(0.5),
+              borderRadius: true,
+              moveIndicatorFromBottom: 180.0,
+              noRadiusForIndicator: true,
+            ),
           ),
         ),
         SizedBox(
           width: 6,
         ),
-        Container(
-          width: 150,
-          child: Column(
-            children: [
-              Container(
-                child: Text(
-                  "$setinAdi",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
+        Expanded(
+          child: Container(
+            width: 150,
+            child: Column(
+              children: [
+                Container(
+                  child: Text(
+                    "$setinAdi",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-              Container(child: Text("$mlBilgisi")),
-              Container(
-                width: 150,
-                child: Text(
-                  "$aciklama",
-                  style: TextStyle(fontSize: 12),
+                Container(child: Text("$mlBilgisi")),
+                Container(
+                  width: 150,
+                  child: Text(
+                    "$aciklama",
+                    style: TextStyle(fontSize: 12),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ],

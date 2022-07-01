@@ -20,42 +20,50 @@ class BeslenmePaketleri extends StatelessWidget {
       children: [
         Row(
           children: [
-            BeslenmePaketleriContainer(
-              beslenmePaketJpg: "ProteinPlusPaketi",
-              beslenmePaketAdi: "Protein Plus Paketi",
-              tiklandiginda: () {},
-              beslenmePaketAciklama:
-                  "Protein Plus Paketi ile yağ yakımınız hızlanırken hafifleyebilir, tüm gün tok ve enerjik hissedebilirsiniz.",
-              beslenmePaketFiyat: "735TL",
+            Expanded(
+              child: BeslenmePaketleriContainer(
+                beslenmePaketJpg: "ProteinPlusPaketi",
+                beslenmePaketAdi: "Protein Plus Paketi",
+                tiklandiginda: () {},
+                beslenmePaketAciklama:
+                    "Protein Plus Paketi ile yağ yakımınız hızlanırken hafifleyebilir, tüm gün tok ve enerjik hissedebilirsiniz.",
+                beslenmePaketFiyat: "735TL",
+              ),
             ),
-            BeslenmePaketleriContainer(
-              beslenmePaketJpg: "1HaftalikFitPaket",
-              beslenmePaketAdi: "1 Haftalık Fit Paket",
-              tiklandiginda: () {},
-              beslenmePaketAciklama:
-                  "Nereye giderseniz gidin yanınızda götürebileceğiniz 1 Haftalık Fit Paket ile tok kalarak hızlı bir şekilde hafifleyebilirsiniz!",
-              beslenmePaketFiyat: "1000TL",
+            Expanded(
+              child: BeslenmePaketleriContainer(
+                beslenmePaketJpg: "1HaftalikFitPaket",
+                beslenmePaketAdi: "1 Haftalık Fit Paket",
+                tiklandiginda: () {},
+                beslenmePaketAciklama:
+                    "Nereye giderseniz gidin yanınızda götürebileceğiniz 1 Haftalık Fit Paket ile tok kalarak hızlı bir şekilde hafifleyebilirsiniz!",
+                beslenmePaketFiyat: "1000TL",
+              ),
             )
           ],
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            BeslenmePaketleriContainer(
-              beslenmePaketJpg: "1HaftalikVejetaryenFitPaket",
-              beslenmePaketAdi: "1 Haftalık Vejetaryen Fit Paket",
-              tiklandiginda: () {},
-              beslenmePaketAciklama:
-                  "Fit bir vücuda sahip olmanın keyfini çıkarın!",
-              beslenmePaketFiyat: "1100TL",
+            Expanded(
+              child: BeslenmePaketleriContainer(
+                beslenmePaketJpg: "1HaftalikVejetaryenFitPaket",
+                beslenmePaketAdi: "1 Haftalık Vejetaryen Fit Paket",
+                tiklandiginda: () {},
+                beslenmePaketAciklama:
+                    "Fit bir vücuda sahip olmanın keyfini çıkarın!",
+                beslenmePaketFiyat: "1100TL",
+              ),
             ),
-            BeslenmePaketleriContainer(
-              beslenmePaketJpg: "1HaftalikVeganFitPaket",
-              beslenmePaketAdi: "1 Haftalık Vegan Fit Paket",
-              tiklandiginda: () {},
-              beslenmePaketAciklama:
-                  "Kendi özel tariflerimizden oluşan, birbirinden lezzetli detoks ve fit menülerimizin yanında; metabolizmanızı hızlandıracak özel çaylarımızla lezzetin ve fit bir vücuda sahip olmanın keyfini çıkarın!",
-              beslenmePaketFiyat: "1100TL",
+            Expanded(
+              child: BeslenmePaketleriContainer(
+                beslenmePaketJpg: "1HaftalikVeganFitPaket",
+                beslenmePaketAdi: "1 Haftalık Vegan Fit Paket",
+                tiklandiginda: () {},
+                beslenmePaketAciklama:
+                    "Kendi özel tariflerimizden oluşan, birbirinden lezzetli detoks ve fit menülerimizin yanında; metabolizmanızı hızlandıracak özel çaylarımızla lezzetin ve fit bir vücuda sahip olmanın keyfini çıkarın!",
+                beslenmePaketFiyat: "1100TL",
+              ),
             )
           ],
         ),

@@ -83,7 +83,7 @@ class LimonluKakaoluFitToplarTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "2.)Diğer malzemelerle karıştırıp şekil verelim."),
-      ],
+      SizedBox(height:70)],
     );
   }
 }

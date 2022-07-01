@@ -56,131 +56,147 @@ class _EndeksState extends State<Endeks> {
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.indigo,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(4.0),
-                                child: Text(
-                                  "BOY",
-                                  style: textRenkBeyaz(),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(4.0),
-                                child: Text(
-                                  secilenBoy.toString(),
-                                  style: textRenkBeyaz(),
-                                ),
-                              ),
-                              Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: OutlinedButton(
-                                        style: OutlinedButton.styleFrom(
-                                            side: BorderSide(
-                                                color: Colors.white, width: 2)),
-                                        onPressed: () {
-                                          setState(() {
-                                            secilenBoy++;
-                                          });
-                                        },
-                                        child: Icon(
-                                          FontAwesomeIcons.plus,
-                                          color: Colors.white,
-                                        )),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                                color: Colors.indigo,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(4.0),
+                                  child: Text(
+                                    "BOY",
+                                    style: textRenkBeyaz(),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: OutlinedButton(
-                                        style: OutlinedButton.styleFrom(
-                                            side: BorderSide(
-                                                color: Colors.white, width: 2)),
-                                        onPressed: () {
-                                          setState(() {
-                                            secilenBoy--;
-                                          });
-                                        },
-                                        child: Icon(
-                                          FontAwesomeIcons.minus,
-                                          color: Colors.white,
-                                        )),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(4.0),
+                                  child: Text(
+                                    secilenBoy.toString(),
+                                    style: textRenkBeyaz(),
                                   ),
-                                ],
-                              )
-                            ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Expanded(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: OutlinedButton(
+                                            style: OutlinedButton.styleFrom(
+                                                side: BorderSide(
+                                                    color: Colors.white,
+                                                    width: 2)),
+                                            onPressed: () {
+                                              setState(() {
+                                                secilenBoy++;
+                                              });
+                                            },
+                                            child: Icon(
+                                              FontAwesomeIcons.plus,
+                                              color: Colors.white,
+                                            )),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: OutlinedButton(
+                                            style: OutlinedButton.styleFrom(
+                                                side: BorderSide(
+                                                    color: Colors.white,
+                                                    width: 2)),
+                                            onPressed: () {
+                                              setState(() {
+                                                secilenBoy--;
+                                              });
+                                            },
+                                            child: Icon(
+                                              FontAwesomeIcons.minus,
+                                              color: Colors.white,
+                                            )),
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         SizedBox(
                           width: 50,
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.indigo,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(4.0),
-                                child: Text(
-                                  "KILO",
-                                  style: textRenkBeyaz(),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(4.0),
-                                child: Text(
-                                  secilenKilo.toString(),
-                                  style: textRenkBeyaz(),
-                                ),
-                              ),
-                              Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: OutlinedButton(
-                                        style: OutlinedButton.styleFrom(
-                                            side: BorderSide(
-                                                color: Colors.white, width: 2)),
-                                        onPressed: () {
-                                          setState(() {
-                                            secilenKilo++;
-                                          });
-                                        },
-                                        child: Icon(
-                                          FontAwesomeIcons.plus,
-                                          color: Colors.white,
-                                        )),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                                color: Colors.indigo,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(4.0),
+                                  child: Text(
+                                    "KILO",
+                                    style: textRenkBeyaz(),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: OutlinedButton(
-                                        style: OutlinedButton.styleFrom(
-                                            side: BorderSide(
-                                                color: Colors.white, width: 2)),
-                                        onPressed: () {
-                                          setState(() {
-                                            secilenKilo--;
-                                          });
-                                        },
-                                        child: Icon(
-                                          FontAwesomeIcons.minus,
-                                          color: Colors.white,
-                                        )),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(4.0),
+                                  child: Text(
+                                    secilenKilo.toString(),
+                                    style: textRenkBeyaz(),
                                   ),
-                                ],
-                              )
-                            ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Expanded(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: OutlinedButton(
+                                            style: OutlinedButton.styleFrom(
+                                                side: BorderSide(
+                                                    color: Colors.white,
+                                                    width: 2)),
+                                            onPressed: () {
+                                              setState(() {
+                                                secilenKilo++;
+                                              });
+                                            },
+                                            child: Icon(
+                                              FontAwesomeIcons.plus,
+                                              color: Colors.white,
+                                            )),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: OutlinedButton(
+                                            style: OutlinedButton.styleFrom(
+                                                side: BorderSide(
+                                                    color: Colors.white,
+                                                    width: 2)),
+                                            onPressed: () {
+                                              setState(() {
+                                                secilenKilo--;
+                                              });
+                                            },
+                                            child: Icon(
+                                              FontAwesomeIcons.minus,
+                                              color: Colors.white,
+                                            )),
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ],
@@ -194,10 +210,10 @@ class _EndeksState extends State<Endeks> {
                               height: 50,
                               child: ElevatedButton(
                                 onPressed: () {
-                                 Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => VeriEkle()));
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => VeriEkle()));
                                 },
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,

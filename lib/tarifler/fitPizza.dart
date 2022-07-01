@@ -84,6 +84,7 @@ class FitPizzaTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "3.)Malzemeler eklenip, baharatlarla çeşnilendirilip 200 derece fırında 5 dakika daha pişirilir."),
+        SizedBox(height:70)
       ],
     );
   }

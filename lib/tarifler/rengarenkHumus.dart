@@ -46,7 +46,7 @@ class RengarenkHumusTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "Tüm malzemeleri blenderdan geçirip kendi damak tadınıza veya zevkinize göre malzemelerin miktarını değiştirebilirsiniz."),
-      ],
+      SizedBox(height:70)],
     );
   }
 }

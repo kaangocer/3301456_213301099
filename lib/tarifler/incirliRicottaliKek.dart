@@ -64,7 +64,7 @@ class IncirliRicottaliKekTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "7.)Çıktıktan sonra kabukları çıkarılmış ve ikiye bölünmüş bademle süsledik."),
-      ],
+      SizedBox(height:70)],
     );
   }
 }

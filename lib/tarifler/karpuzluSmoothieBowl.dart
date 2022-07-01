@@ -46,7 +46,7 @@ class KarpuzluSmoothieTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "2.)Üzerine frenk üzümü, çilek ve şekersiz hindistan cevizi ezmesi ve topping ekliyoruz."),
-      ],
+      SizedBox(height:70)],
     );
   }
 }

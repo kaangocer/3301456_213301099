@@ -60,6 +60,7 @@ class BorsCorbasiTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "5.)Çok fazla beklemeden alabilirsiniz. Mutlaka limonla servis etmenizi öneririm."),
+      SizedBox(height:70)
       ],
     );
   }

@@ -51,6 +51,7 @@ class BlueSmoothieBowlTarif extends StatelessWidget {
         tariflerHazirlanisContainer(
             tariflerHazirlanisAciklama:
                 "3.)İsteğe bağlı olarak 1 ölçek vanilyalı protein tozu ekleyebilirsiniz. Başka aroma kullanmayalım baya kötü olabilir."),
+      SizedBox(height:70)
       ],
     );
   }

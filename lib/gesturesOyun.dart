@@ -57,149 +57,167 @@ class _GesturesOyunState extends State<GesturesOyun> {
         children: [
           Row(
             children: [
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "1";
-                    });
-                  }),
-                  child: GestureContainer(
-                    rakam: "1",
-                    renk: seciliKutu == "4"
-                        ? Colors.blue
-                        : seciliKutu == "9"
-                            ? Colors.blue
-                            : Colors.amberAccent,
-                  )),
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "2";
-                    });
-                  }),
-                  child: GestureContainer(
-                    rakam: "2",
-                    renk: seciliKutu == "4"
-                        ? Colors.blue
-                        : seciliKutu == "3"
-                            ? Colors.blue
-                            : Colors.red,
-                  )),
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "3";
-                    });
-                  }),
-                  child: GestureContainer(
-                      rakam: "3",
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "1";
+                      });
+                    }),
+                    child: GestureContainer(
+                      rakam: "1",
                       renk: seciliKutu == "4"
                           ? Colors.blue
                           : seciliKutu == "9"
                               ? Colors.blue
-                              : Colors.grey)),
-            ],
-          ),
-          Row(
-            children: [
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "4";
-                    });
-                  }),
-                  child: GestureContainer(
-                    rakam: "4",
-                    renk: seciliKutu == "4"
-                        ? Colors.blue
-                        : seciliKutu == "5"
-                            ? Colors.blue
-                            : Colors.green,
-                  )),
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "5";
-                    });
-                  }),
-                  child: GestureContainer(
-                    rakam: "5",
-                    renk: seciliKutu == "4"
-                        ? Colors.blue
-                        : seciliKutu == "5"
-                            ? Colors.blue
-                            : seciliKutu == "6"
-                                ? Colors.blue
-                                : Colors.pink,
-                  )),
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "6";
-                    });
-                  }),
-                  child: GestureContainer(
-                    rakam: "6",
-                    renk: seciliKutu == "4"
-                        ? Colors.blue
-                        : seciliKutu == "1"
-                            ? Colors.blue
-                            : seciliKutu == "6"
-                                ? Colors.blue
-                                : Colors.orange,
-                  )),
-            ],
-          ),
-          Row(
-            children: [
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "7";
-                    });
-                  }),
-                  child: GestureContainer(
-                    rakam: "7",
-                    renk: seciliKutu == "4"
-                        ? Colors.blue
-                        : seciliKutu == "8"
-                            ? Colors.blue
-                            : seciliKutu == "2"
-                                ? Colors.blue
-                                : Colors.blueGrey,
-                  )),
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "8";
-                    });
-                  }),
-                  child: GestureContainer(
-                    rakam: "8",
-                    renk: seciliKutu == "4"
-                        ? Colors.blue
-                        : seciliKutu == "9"
-                            ? Colors.blue
-                            : seciliKutu == "5"
-                                ? Colors.blue
-                                : Colors.yellow,
-                  )),
-              GestureDetector(
-                  onTap: (() {
-                    setState(() {
-                      seciliKutu = "9";
-                    });
-                  }),
-                  child: GestureContainer(
-                    rakam: "9",
-                    renk: seciliKutu == "4"
-                        ? Colors.blue
-                        : seciliKutu == "2"
+                              : Colors.amberAccent,
+                    )),
+              ),
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "2";
+                      });
+                    }),
+                    child: GestureContainer(
+                      rakam: "2",
+                      renk: seciliKutu == "4"
+                          ? Colors.blue
+                          : seciliKutu == "3"
+                              ? Colors.blue
+                              : Colors.red,
+                    )),
+              ),
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "3";
+                      });
+                    }),
+                    child: GestureContainer(
+                        rakam: "3",
+                        renk: seciliKutu == "4"
                             ? Colors.blue
                             : seciliKutu == "9"
                                 ? Colors.blue
-                                : Colors.white,
-                  )),
+                                : Colors.grey)),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "4";
+                      });
+                    }),
+                    child: GestureContainer(
+                      rakam: "4",
+                      renk: seciliKutu == "4"
+                          ? Colors.blue
+                          : seciliKutu == "5"
+                              ? Colors.blue
+                              : Colors.green,
+                    )),
+              ),
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "5";
+                      });
+                    }),
+                    child: GestureContainer(
+                      rakam: "5",
+                      renk: seciliKutu == "4"
+                          ? Colors.blue
+                          : seciliKutu == "5"
+                              ? Colors.blue
+                              : seciliKutu == "6"
+                                  ? Colors.blue
+                                  : Colors.pink,
+                    )),
+              ),
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "6";
+                      });
+                    }),
+                    child: GestureContainer(
+                      rakam: "6",
+                      renk: seciliKutu == "4"
+                          ? Colors.blue
+                          : seciliKutu == "1"
+                              ? Colors.blue
+                              : seciliKutu == "6"
+                                  ? Colors.blue
+                                  : Colors.orange,
+                    )),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "7";
+                      });
+                    }),
+                    child: GestureContainer(
+                      rakam: "7",
+                      renk: seciliKutu == "4"
+                          ? Colors.blue
+                          : seciliKutu == "8"
+                              ? Colors.blue
+                              : seciliKutu == "2"
+                                  ? Colors.blue
+                                  : Colors.blueGrey,
+                    )),
+              ),
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "8";
+                      });
+                    }),
+                    child: GestureContainer(
+                      rakam: "8",
+                      renk: seciliKutu == "4"
+                          ? Colors.blue
+                          : seciliKutu == "9"
+                              ? Colors.blue
+                              : seciliKutu == "5"
+                                  ? Colors.blue
+                                  : Colors.yellow,
+                    )),
+              ),
+              Expanded(
+                child: GestureDetector(
+                    onTap: (() {
+                      setState(() {
+                        seciliKutu = "9";
+                      });
+                    }),
+                    child: GestureContainer(
+                      rakam: "9",
+                      renk: seciliKutu == "4"
+                          ? Colors.blue
+                          : seciliKutu == "2"
+                              ? Colors.blue
+                              : seciliKutu == "9"
+                                  ? Colors.blue
+                                  : Colors.white,
+                    )),
+              ),
             ],
           )
         ],

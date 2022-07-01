@@ -17,8 +17,12 @@ class AuthIslemleri {
 
   Future<User?> kullaniciYarat(
       String eMail, String sifre, String kullaniciAdi) async {
+
+        //auth islemi
     var kullanici = await _auth.createUserWithEmailAndPassword(
         email: eMail, password: sifre);
+
+//verileri map haline getirdim ve firestore a gönderdim
     Map<String, dynamic> kullaniciData = {
       "kullaniciAdi": kullaniciAdi,
       "sifre": sifre,
@@ -28,7 +32,6 @@ class AuthIslemleri {
         .collection("tbKullanici")
         .doc(kullanici.user?.uid)
         .set(kullaniciData);
-
     return kullanici.user;
   }
 }
